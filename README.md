@@ -1,6 +1,6 @@
 # R-ALAB 320H.3.1 - Rendering Arrays from State
 
-![screen shot](screenshot.png)
+![screen shot](src/screenshot.png)
 ___
 ## Getting Started with Create React App
 
