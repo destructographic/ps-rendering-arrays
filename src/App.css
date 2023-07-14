@@ -1,38 +1,48 @@
+:root {
+  --appBg: bisque;
+  --grey: #333;
+  --learnerColor: #fa641e;
+  --learnerBg: blanchedalmond;
+}
+
+
+
+
 .App {
-  text-align: center;
+  padding: 20px;
+  background-color: var(--appBg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Learner component */
+.Learner {
+  width: 80%;
+  margin: 0 auto; /* center the div horizontally */
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--learnerBg);
 }
 
-.App-link {
-  color: #61dafb;
+.Learner h2 {
+  color: var(--learnerColor);
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Learner p {
+  color: var(--grey);
+}
+
+/* Score component */
+.Score {
+  margin-top: 10px;
+  width: 48%;
+ }
+
+.Score p {
+  color:  var(--grey);
+  margin: 5px 0;
 }
